@@ -6,11 +6,13 @@
 #    By: jdunnink <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/20 09:33:47 by jdunnink      #+#    #+#                  #
-#    Updated: 2019/03/27 10:10:38 by jdunnink      ########   odam.nl          #
+#    Updated: 2019/03/28 10:14:21 by jdunnink      ########   odam.nl          #
 #                                                                              #
 #******************************************************************************#
 
 NAME = libft.a
+
+CFLG = -Wall -Werror -Wextra
 
 SRC = 	ft_swap.c		\
 		ft_atoi.c		\
@@ -72,24 +74,24 @@ SRC = 	ft_swap.c		\
 		ft_lstmap.c		\
 		ft_lstnew.c		\
 
-OBJ = $(SRC:.c=.o)
-
-INC = libft.h
-CFLG = -Wall -Wextra -Werror
+OBJ = $(SRC:%.c=%.o)
+INCLUDES = libft.h
 
 all: $(NAME)
 
-$(NAME) :
-	gcc $(CFLG) -c $(SRC) -I $(INC) 
+$(NAME): $(OBJ)
+	@gcc -c $(CFLAGS) $(SRC) $(INCLUDES)
 	@ar rcs $(NAME) $(OBJ)
-	ranlib $(NAME)
+
+%.o:%.c $(INCLUDES)
+	gcc $(CFLAGS) -o $@ -c $<
 
 clean:
-	/bin/rm -f $(OBJ)
+	rm -f $(OBJ) $(INCLUDES).gch
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: clean fclean
+.PHONY: clean fclean all re
