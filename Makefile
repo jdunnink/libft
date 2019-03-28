@@ -6,7 +6,7 @@
 #    By: jdunnink <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/20 09:33:47 by jdunnink      #+#    #+#                  #
-#    Updated: 2019/03/28 10:14:21 by jdunnink      ########   odam.nl          #
+#    Updated: 2019/03/28 16:47:59 by jdunnink      ########   odam.nl          #
 #                                                                              #
 #******************************************************************************#
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 CFLG = -Wall -Werror -Wextra
 
-SRC = 	ft_swap.c		\
+SRC =	ft_swap.c		\
 		ft_atoi.c		\
 		ft_bzero.c		\
 		ft_isalnum.c	\
@@ -73,6 +73,7 @@ SRC = 	ft_swap.c		\
 		ft_lstiter.c	\
 		ft_lstmap.c		\
 		ft_lstnew.c		\
+		ft_itoa_base.c		
 
 OBJ = $(SRC:%.c=%.o)
 INCLUDES = libft.h
