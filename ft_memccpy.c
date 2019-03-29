@@ -6,11 +6,11 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/21 18:22:18 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/22 15:11:56 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/28 17:20:43 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

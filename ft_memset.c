@@ -6,11 +6,11 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/22 09:02:44 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/27 10:16:07 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/28 17:19:44 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

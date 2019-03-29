@@ -6,11 +6,11 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/21 13:34:30 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/28 09:54:19 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/28 17:22:48 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/21 19:33:49 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/22 15:11:08 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/28 17:17:37 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

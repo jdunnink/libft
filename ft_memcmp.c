@@ -6,11 +6,11 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/21 15:31:35 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/27 12:16:56 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/28 17:21:30 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
