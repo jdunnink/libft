@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/23 12:09:19 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/29 13:36:30 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/29 15:10:15 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ static	char	*word_cpy(char const *ptr, char c)
 	i = 0;
 	while (ptr[i] != c && ptr[i] != '\0')
 		i++;
-	if ((dest = (char*)malloc(sizeof(char) * i + 1)) == 0)
+	dest = (char*)malloc(sizeof(char) * i + 1);
+	if (!dest)
 		return (NULL);
 	i = 0;
 	while (ptr[i] != c && ptr[i] != '\0')
