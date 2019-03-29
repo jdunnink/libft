@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/23 12:09:19 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/28 17:28:43 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/29 13:36:30 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,12 @@ static	char	*word_cpy(char const *ptr, char c)
 	return (dest);
 }
 
+static	void	filter_front(char const **s, char c)
+{
+	while (**s == c)
+		*s = *s + 1;
+}
+
 char			**ft_strsplit(char const *s, char c)
 {
 	char			**dest;
@@ -60,10 +66,10 @@ char			**ft_strsplit(char const *s, char c)
 	if (!s)
 		return (NULL);
 	psize = count_word(s, c);
-	if ((dest = (char**)malloc(sizeof(char*) * (psize + 1))) == 0)
+	dest = (char**)malloc(sizeof(char*) * (psize + 1));
+	if (!dest)
 		return (NULL);
-	while (*s == c)
-		s++;
+	filter_front(&s, c);
 	x = 0;
 	while (x < psize)
 	{

@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/22 15:39:16 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/27 12:59:14 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/29 13:00:54 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
-	if ((dest = ft_strnew(sizeof(char) * len)) == 0)
+	dest = ft_strnew(sizeof(char) * len);
+	if (!dest)
 		return (NULL);
 	i = 0;
 	while (s[i] != '\0')

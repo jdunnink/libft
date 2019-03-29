@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/22 16:13:45 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/27 12:58:42 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/03/29 13:07:19 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if ((dest = (char*)malloc(sizeof(char) * len + 1)))
+	dest = (char*)malloc(sizeof(char) * len + 1);
+	if (dest)
 	{
 		i = 0;
 		while (i < len)
