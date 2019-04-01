@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_memcpy.c                                        :+:    :+:            */
+/*   ft_isnegative.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/03/21 18:10:03 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/04/01 11:08:58 by jdunnink      ########   odam.nl         */
+/*   Created: 2019/04/01 11:01:00 by jdunnink      #+#    #+#                 */
+/*   Updated: 2019/04/01 11:05:41 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+int	ft_isnegative(int nb)
 {
-	unsigned char	*s1;
-	unsigned char	*s2;
-	size_t			i;
-
-	s1 = (unsigned char *)dst;
-	s2 = (unsigned char *)src;
-	i = 0;
-	while (i < n)
-	{
-		s1[i] = s2[i];
-		i++;
-	}
-	return (s1);
+	if (nb < 0)
+		return (1);
+	else
+		return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/25 16:26:55 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/03/27 11:16:24 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/04/01 13:49:37 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list *node;
 
-	if (!(node = (t_list*)malloc(sizeof(t_list))))
+	node = (t_list*)malloc(sizeof(t_list));
+	if (!node)
 		return (NULL);
 	if (content)
 	{

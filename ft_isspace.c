@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_memcpy.c                                        :+:    :+:            */
+/*   ft_isspace.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/03/21 18:10:03 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/04/01 11:08:58 by jdunnink      ########   odam.nl         */
+/*   Created: 2019/04/01 10:59:48 by jdunnink      #+#    #+#                 */
+/*   Updated: 2019/04/01 10:59:59 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+int		ft_isspace(int c)
 {
-	unsigned char	*s1;
-	unsigned char	*s2;
-	size_t			i;
-
-	s1 = (unsigned char *)dst;
-	s2 = (unsigned char *)src;
-	i = 0;
-	while (i < n)
-	{
-		s1[i] = s2[i];
-		i++;
-	}
-	return (s1);
+	c = (unsigned char)c;
+	if (c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r'
+		|| c == ' ')
+		return (1);
+	return (0);
 }
