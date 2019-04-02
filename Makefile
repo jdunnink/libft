@@ -6,7 +6,7 @@
 #    By: jdunnink <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/20 09:33:47 by jdunnink      #+#    #+#                  #
-#    Updated: 2019/03/28 16:47:59 by jdunnink      ########   odam.nl          #
+#    Updated: 2019/04/02 14:07:42 by jdunnink      ########   odam.nl          #
 #                                                                              #
 #******************************************************************************#
 
@@ -73,7 +73,10 @@ SRC =	ft_swap.c		\
 		ft_lstiter.c	\
 		ft_lstmap.c		\
 		ft_lstnew.c		\
-		ft_itoa_base.c		
+		ft_itoa_base.c	\
+		ft_reversebits.c\
+		ft_printbits.c	\
+		ft_swapbits.c		
 
 OBJ = $(SRC:%.c=%.o)
 INCLUDES = libft.h
