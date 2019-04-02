@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 10:03:12 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/04/01 11:08:10 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/04/02 11:46:29 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
+unsigned char	ft_swapbits(unsigned char octet);
+void			ft_printbits(unsigned char octec);
 char			*ft_itoa_base(int value, int base);
 int				ft_isspace(int c);
 int				ft_abs(int nb);
