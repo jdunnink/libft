@@ -6,13 +6,9 @@
 #    By: jdunnink <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/20 09:33:47 by jdunnink      #+#    #+#                  #
-#    Updated: 2019/04/02 14:07:42 by jdunnink      ########   odam.nl          #
+#    Updated: 2019/04/03 11:00:31 by jdunnink      ########   odam.nl          #
 #                                                                              #
 #******************************************************************************#
-
-NAME = libft.a
-
-CFLG = -Wall -Werror -Wextra
 
 SRC =	ft_swap.c		\
 		ft_atoi.c		\
@@ -78,24 +74,42 @@ SRC =	ft_swap.c		\
 		ft_printbits.c	\
 		ft_swapbits.c		
 
-OBJ = $(SRC:%.c=%.o)
-INCLUDES = libft.h
+OBJ = $(SRC:.c=.o)
+
+SRCDIR = srcs
+
+OBJDIR = objs
+
+SRCS = $(addprefix $(SRCDIR)/, $(SRC))
+
+OBJS = $(addprefix $(OBJDIR)/, $(OBJ))
+
+HEADER = -I includes
+
+CC = gcc
+
+CFLAGS = -c -Wall -Wextra -Werror
+
+NAME = libft.a
+
+.PHONY: all clean fclean re
+.SUFFIXES: .c .o
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	@gcc -c $(CFLAGS) $(SRC) $(INCLUDES)
-	@ar rcs $(NAME) $(OBJ)
+$(OBJS): $(SRCS)
+	/bin/mkdir -p $(OBJDIR) ;
+	$(CC) $(CFLAGS) $(SRCS) $(HEADER) ;
+	/bin/mv $(OBJ) $(OBJDIR)/
 
-%.o:%.c $(INCLUDES)
-	gcc $(CFLAGS) -o $@ -c $<
+$(NAME): $(OBJS)
+	ar rcs $@ $^
+	ranlib $@
 
 clean:
-	rm -f $(OBJ) $(INCLUDES).gch
+	/bin/rm -rf $(OBJDIR)
 
 fclean: clean
-	rm -f $(NAME)
+	/bin/rm -f $(NAME)
 
 re: fclean all
-
-.PHONY: clean fclean all re
