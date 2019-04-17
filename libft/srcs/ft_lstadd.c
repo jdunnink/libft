@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_reversebits.c                                   :+:    :+:            */
+/*   ft_lstadd.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/04/02 13:52:42 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/04/02 14:05:37 by jdunnink      ########   odam.nl         */
+/*   Created: 2019/03/27 09:55:16 by jdunnink      #+#    #+#                 */
+/*   Updated: 2019/04/08 17:52:43 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned char ft_reversebit(unsigned char byte)
-{
-	unsigned char read;
-	unsigned char write;
-	unsigned char result;
+#include "libft.h"
 
-	read = 1;
-	write = 128;
-	result = 0;
-	while (read)
+void	ft_lstadd(t_list **alst, t_list *new)
+{
+	if (alst != NULL && new != NULL)
 	{
-		if (byte & read)
-			result |= write;
-		read <<= 1;
-		write >>= 1;
+		new->next = *alst;
+		*alst = new;
 	}
-	return (result);
 }
