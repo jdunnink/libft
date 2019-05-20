@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_bzero takes a pointer (converted to unsigned char),
+**	and sets up to n bytes to zero.
+*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;

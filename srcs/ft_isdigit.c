@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_isalnum return 1 if a passed integer corresponds to a
+**	numerical ascii value (0 - 9), and 0 if it does not.
+*/
+
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)

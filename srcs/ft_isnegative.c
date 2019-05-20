@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_isnegative return 1 if a passed integer is negative
+**	and 0 if the value is zero or higher.
+*/
+
 int	ft_isnegative(int nb)
 {
 	if (nb < 0)

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ctostr (char to string) takes a single character,
+**	an returns this character as null-terminated string.
+*/
+
 char	*ft_ctostr(char c)
 {
 	char *dest;

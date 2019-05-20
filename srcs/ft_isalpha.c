@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_isalpha return 1 if a passed integer corresponds to a
+**	alphabetical ascii value, and 0 if it does not.
+*/
+
 int	ft_isalpha(int c)
 {
 	if ((c >= 97 && c <= 122) ||

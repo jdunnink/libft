@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+**	ft_itoa_base (int to ascii) takes a integer value and a base, and returns
+**	the string notation of that integer, adjusted for the base that was passed
+**	as argument. Bases supporeted range between 2 and 16.
+*/
+
 static	long	int	ft_labs(long int nb)
 {
 	if (nb < 0)

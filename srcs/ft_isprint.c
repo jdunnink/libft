@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_isprint takes a integer value, and returns 1 if the value corresponds
+**	to a printable ascii character, and 0 if it does not.
+*/
+
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

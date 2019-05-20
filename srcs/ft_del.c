@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+**	ft_del takes a pointer to an allocated memory space and frees that pointer.
+*/
+
 void	ft_del(void *content, size_t content_size)
 {
 	if (content)

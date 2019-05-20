@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_itoa (int to ascii) takes a integer value, and returns
+**	the string notation of that integer.
+*/
+
 static	int		is_negative(int *n)
 {
 	if (*n < 0)

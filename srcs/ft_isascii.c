@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_isalnum return 1 if a passed integer corresponds
+**	to any ascii value, and 0 if it does not.
+*/
+
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

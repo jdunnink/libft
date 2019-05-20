@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_atoi takes a number, written in string format,
+**	and returns the number in int format.
+*/
+
 int	ft_atoi(const char *str)
 {
 	int			i;

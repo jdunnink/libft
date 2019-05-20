@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_isspace return 1 if the given integer corresponds to one of
+** the following: \t, \n, \v, \f, \r and 0 if it does not.
+*/
+
 int		ft_isspace(int c)
 {
 	c = (unsigned char)c;
