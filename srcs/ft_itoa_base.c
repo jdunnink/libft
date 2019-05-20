@@ -46,7 +46,7 @@ char				*ft_itoa_base(int value, int base)
 	char		*tab;
 
 	temp = (long int)value;
-	tab = "0123456789ABCDEF";
+	tab = "0123456789abcdef";
 	if (base < 2 || base > 16)
 		return (NULL);
 	len = ft_find_size(temp, base);

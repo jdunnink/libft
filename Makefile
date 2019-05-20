@@ -6,7 +6,7 @@
 #    By: jdunnink <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/20 09:33:47 by jdunnink      #+#    #+#                  #
-#    Updated: 2019/04/17 11:13:05 by jdunnink      ########   odam.nl          #
+#    Updated: 2019/05/04 14:33:06 by jdunnink      ########   odam.nl          #
 #                                                                              #
 #******************************************************************************#
 
@@ -42,6 +42,7 @@ SRC =	ft_swap.c			\
 		ft_strcpy.c			\
 		ft_strdel.c			\
 		ft_strdup.c			\
+		ft_strndup.c		\
 		ft_strequ.c			\
 		ft_striter.c		\
 		ft_striteri.c		\
@@ -76,7 +77,10 @@ SRC =	ft_swap.c			\
 		ft_swapbits.c		\
 		ft_memdup.c			\
 		ft_del.c			\
-		get_next_line.c
+		ft_sqrt.c			\
+		get_next_line.c		\
+		ft_lstaddend.c		\
+		ft_ctostr.c			\
 
 OBJ = $(SRC:.c=.o)
 
@@ -94,7 +98,7 @@ CC = gcc
 
 NAME = libft.a
 
-CFLAGS = -c -Wall -Wextra -Werror
+CFLAGS = -c
 
 .PHONY: all clean fclean re
 .SUFFIXES: .c .o

@@ -6,7 +6,7 @@
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 10:03:12 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/04/14 15:16:03 by jdunnink      ########   odam.nl         */
+/*   Updated: 2019/05/04 14:32:48 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,14 @@ unsigned char	ft_reversebits(unsigned char octet);
 unsigned char	ft_swapbits(unsigned char octet);
 char			*ft_itoa_base(int value, int base);
 char			*ft_itoa(int n);
+char			*ft_ctostr(char c);
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 void			ft_striter(char *s, void (*f)(char *));
 void			ft_bzero(void *s, size_t n);
 void			ft_swap(int *a, int *b);
 int				ft_atoi(const char *str);
 int				ft_abs(int nb);
+int				ft_sqrt(int nb);
 
 char			**ft_strsplit(char const *s, char c);
 char			*ft_strtrim(char const *s);
@@ -75,6 +77,7 @@ char			*ft_strstr(const char *hstack, const char *needle);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strdup(const char *s1);
+char			*ft_strndup(char *src, size_t nb);
 size_t			ft_strlen(const char *str);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 void			ft_strclr(char *s);
@@ -98,5 +101,6 @@ void			ft_putendl(char const *s);
 void			ft_putnbr(int n);
 void			ft_putchar(char c);
 void			ft_putstr(char const *str);
+int				ft_lstaddend(t_list **begin, void *content, size_t size);
 
 #endif
