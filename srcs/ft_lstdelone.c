@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** ft_lstdelone frees and removes the first node of an existing linked list.
+*/
+
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
 	t_list	*lst;

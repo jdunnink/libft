@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memccpy copies bytes from src to dest until src is equal to c or n.
+**	It returns a pointer to the byte after the last byte copied.
+*/
+
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	unsigned char	*s1;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** ft_lstdel takes an existing linked list and frees this list, node by
+** node, using the function passed as argument.
+*/
+
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
 	if ((*alst)->next)

@@ -12,7 +12,12 @@
 
 #include "libft.h"
 
-int		ft_lstaddend(t_list **begin, void *content, size_t size)
+/*
+**	ft_lstpushback creates a new node structure and appends it
+**	to the end of an existing linked list.
+*/
+
+int		ft_lstpushback(t_list **begin, void *content, size_t size)
 {
 	t_list *new;
 	t_list *tmp;

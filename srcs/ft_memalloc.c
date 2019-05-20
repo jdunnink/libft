@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memalloc takes a size given in bytes, and allocates that much memory
+**	to a pointer to be returned. Bytes are initialized to zero.
+*/
+
 void	*ft_memalloc(size_t size)
 {
 	void *ptr;

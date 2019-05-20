@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+**	ft_lstadd adds a new node structure to an existing linked list.
+*/
+
 void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (alst != NULL && new != NULL)

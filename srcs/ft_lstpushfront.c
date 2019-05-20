@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_lstpushfromt creates a new node structure (if it does not exist)
+**	 and adds it to the start of an existing linked list.
+*/
+
 void	ft_lstpushfront(void const *bytes, t_list **lst, size_t size)
 {
 	if (lst != NULL && bytes != NULL)

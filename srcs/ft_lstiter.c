@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** ft_lstiter iter iterates through an existing linked list and applies
+**	the function 'f' passed as argument, to each node in the list.
+*/
+
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if ((lst)->next)

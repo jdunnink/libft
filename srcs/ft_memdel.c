@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memdel frees the space allocated to the pointer adress ap, and sets that
+**	pointer to NULL.
+*/
+
 void	ft_memdel(void **ap)
 {
 	free(*ap);

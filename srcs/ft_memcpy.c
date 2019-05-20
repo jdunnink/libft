@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memcpy copies up to n bytes from src to dst, returning a pointer to
+**	the copy destination.
+*/
+
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*s1;

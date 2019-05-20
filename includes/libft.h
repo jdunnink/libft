@@ -101,6 +101,6 @@ void			ft_putendl(char const *s);
 void			ft_putnbr(int n);
 void			ft_putchar(char c);
 void			ft_putstr(char const *str);
-int				ft_lstaddend(t_list **begin, void *content, size_t size);
+int				ft_lstpushback(t_list **begin, void *content, size_t size);
 
 #endif

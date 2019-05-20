@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+**	ft_memcmp compares s1 to s2 up to n bytes, returning a positive value
+**	if s1 is higher than s2, and a negative value if s2 is higher than
+**	s1. If s1 is equal to s2, 0 is retured.
+*/
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char *one;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memdup creates a new duplication of the byte sequence pointed to by src,
+**	up until len bytes.
+*/
+
 void	*ft_memdup(const void *src, size_t len)
 {
 	void *dest;

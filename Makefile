@@ -79,7 +79,7 @@ SRC =	ft_swap.c			\
 		ft_del.c			\
 		ft_sqrt.c			\
 		get_next_line.c		\
-		ft_lstaddend.c		\
+		ft_lstpushback.c	\
 		ft_ctostr.c			\
 
 OBJ = $(SRC:.c=.o)

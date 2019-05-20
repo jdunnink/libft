@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memchr returns a pointer to the first occurence of c in the byte sequence
+**	pointed to by s, only up to n bytes are checked.
+*/
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
