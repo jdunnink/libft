@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+**	ft_strlen returns the length of the string str.
+*/
+
 size_t	ft_strlen(const char *str)
 {
 	int i;

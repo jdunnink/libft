@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_toupper returns the uppercase version of an alphabetical character
+**	passed as argument.
+*/
+
 int		ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strtrim trims preceding and trailing white spaces from the string s,
+**	passed as argument.
+*/
+
 static	int	trim_left(char const *s)
 {
 	int i;

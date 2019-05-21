@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strclr takes a pointer to a string and clears that string, setting all
+**	bytes to zero.
+*/
+
 void	ft_strclr(char *s)
 {
 	size_t i;

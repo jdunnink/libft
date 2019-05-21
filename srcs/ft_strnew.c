@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strnew creates a new allocated string, using the size passed as argument.
+**	all bytes are initialized to zero.
+*/
+
 char	*ft_strnew(size_t size)
 {
 	char *ptr;

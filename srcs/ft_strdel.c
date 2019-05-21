@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strdel takes the adress of a pointer to a string, and frees that adress,
+**	the pointer is set to zero.
+*/
+
 void	ft_strdel(char **as)
 {
 	if (as != NULL)

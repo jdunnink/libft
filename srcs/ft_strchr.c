@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_strchr locates the first occurence of int c in the string s and returns
+**	a pointer to that byte.
+*/
+
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')

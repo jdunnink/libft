@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	count_word counts and returns the number of
+**	word seperators (c) in the string s.
+*/
+
 static	int		count_word(char const *s, char c)
 {
 	int x;
@@ -30,6 +35,12 @@ static	int		count_word(char const *s, char c)
 		x++;
 	return (x);
 }
+
+/*
+**	word_cpy takes a pointer to the start of a word, allocates
+**	a sufficient memory block and copies from ptr until
+**	a word separator is found.
+*/
 
 static	char	*word_cpy(char const *ptr, char c)
 {
@@ -52,11 +63,24 @@ static	char	*word_cpy(char const *ptr, char c)
 	return (dest);
 }
 
+/*
+**	filter_front is used to filter redundant word separators
+**	found at the start of the string s.
+*/
+
 static	void	filter_front(char const **s, char c)
 {
 	while (**s == c)
 		*s = *s + 1;
 }
+
+/*
+**	ft_strsplit takes a string sentence and returns
+**	an array of strings with each word in the sentence being
+**	a nul-terminated string within this array. the character
+**	passed as argument is used as a word separator to determine
+**	what constitutes a word.
+*/
 
 char			**ft_strsplit(char const *s, char c)
 {

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+**	ft_strncat concatenates up to n bytes from s2 to the end of s1.
+*/
+
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	char *t;

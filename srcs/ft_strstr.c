@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_strnstr locates the first occurance of the substring needle
+**	in to string hstack and returns a pointer to needle, if needle is found.
+*/
+
 char	*ft_strstr(const char *hstack, const char *needle)
 {
 	int x;

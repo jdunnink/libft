@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strndup takes a string and returns an
+**	allocated duplicate of src, up to nb bytes.
+*/
+
 char	*ft_strndup(char *src, size_t nb)
 {
 	size_t	len;

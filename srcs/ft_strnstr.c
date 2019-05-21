@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+**	ft_strnstr locates the substring needle in to string hstack and
+**	returns a pointer to needle, if needle is found.
+**	Only up to len bytes are checked.
+*/
+
 char	*ft_strnstr(const char *hstack, const char *needle, size_t len)
 {
 	size_t x;

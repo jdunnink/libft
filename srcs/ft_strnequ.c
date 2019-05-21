@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strnequ compares up to n bytes between string s1 to string s2,
+**	and returns 1 if the strings are equal, 0 if the they are not.
+*/
+
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	unsigned int i;

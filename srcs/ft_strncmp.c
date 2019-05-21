@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strncm compares up to n bytes between s1 and s2 and returns 0 if the
+**	bytes compared are equal, non-zero if they are not.
+*/
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t i;

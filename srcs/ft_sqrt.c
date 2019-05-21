@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_sqrt returns the square root of the integer nb passed as argument.
+*/
+
 int	ft_sqrt(int nb)
 {
 	int i;

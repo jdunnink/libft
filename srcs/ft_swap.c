@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_swap swaps the values stored in the two integer pointers
+**	passed as argument.
+*/
+
 void	ft_swap(int *a, int *b)
 {
 	int temp;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strsub allocates and copies len bytes from string s, starting
+**	from the index (start) passed as argument.
+*/
+
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;

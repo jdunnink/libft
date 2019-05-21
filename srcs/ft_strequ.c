@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_strequ compares string s1 to string s2 and returns 1 if the strings are
+**	equal, 0 if the they are not.
+*/
+
 int	ft_strequ(char const *s1, char const *s2)
 {
 	if (!s1 || !s2)

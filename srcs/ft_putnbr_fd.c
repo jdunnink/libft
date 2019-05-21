@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_putnbr_fd writes the integer n to the file discriptor
+**	passed as argument.
+*/
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

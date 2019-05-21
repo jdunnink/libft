@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_strcat concatenates the string s2 to the string s1. No memory checks
+**	are included, so s1 should have sufficient memory allocated before
+**	calling this function.
+*/
+
 char	*ft_strcat(char *s1, const char *s2)
 {
 	char *t;

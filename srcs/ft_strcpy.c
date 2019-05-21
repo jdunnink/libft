@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_strcpy copies all bytes from the string src to string dst. If
+**	dst is smaller than src, the behavior is undefined.
+*/
+
 char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_putendl_fd writes the string s and a newline to
+**	the file discriptor fd.
+*/
+
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);

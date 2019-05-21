@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_putstr_fd writes the string s to the file discriptor
+**	passed as argument.
+*/
+
 void	ft_putstr_fd(char const *s, int fd)
 {
 	int i;

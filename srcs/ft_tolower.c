@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_tolower returns the lowercase version of an alphabetical character
+**	passed as argument.
+*/
+
 int			ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

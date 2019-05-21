@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+**	ft_strmapi creates a new string resulting from the application
+**	of function 'f' to every character in the string s. The index
+**	is also passed as argument to 'f'.
+*/
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;

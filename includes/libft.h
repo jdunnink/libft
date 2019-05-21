@@ -48,8 +48,6 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstnew(void const *content, size_t content_size);
 
-unsigned char	ft_reversebits(unsigned char octet);
-unsigned char	ft_swapbits(unsigned char octet);
 char			*ft_itoa_base(int value, int base);
 char			*ft_itoa(int n);
 char			*ft_ctostr(char c);
@@ -92,7 +90,6 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memdup(const void *src, size_t len);
 
-void			ft_printbits(unsigned char octec);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putstr_fd(char const *s, int fd);

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+**	ft_putstr writes the string s to the standard output.
+*/
+
 void			ft_putstr(char const *str)
 {
 	int i;

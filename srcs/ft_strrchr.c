@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_strrchr locates the last occurence of int c in the string s, and
+**	returns a pointer to that byte.
+*/
+
 char	*ft_strrchr(const char *s, int c)
 {
 	const char *t;

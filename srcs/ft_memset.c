@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_memset takes a pointer and sets up to len bytes
+**	to zero.
+*/
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*x;

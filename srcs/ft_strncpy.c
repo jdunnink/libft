@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strncpy copies up to n bytes from the string src to string dst. If
+**	dst is smaller than src, the behavior is undefined.
+*/
+
 char		*ft_strncpy(char *dst, const char *src, size_t len)
 {
 	size_t i;

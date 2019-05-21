@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+**	ft_strmap creates a new string resulting from the application
+**	of function 'f' to every character in the string s.
+*/
+
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int	i;

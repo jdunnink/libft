@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	ft_striter iterates through the string pointed to by s, and applies
+**	the function 'f' to each character in the string. In this case, the string
+**	index is also passed as argument to 'f'.
+*/
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int i;
