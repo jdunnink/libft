@@ -1,6 +1,6 @@
 # libft
 
-One of the introductory projects at [Codam](https://www.codam.nl/), libft is a static function library, written in C. 
+One of the introductory projects at [Codam](https://www.codam.nl/en), libft is a static function library, written in C. 
 Functions included are either implementations of existing functions from the standard C library or unique functions that 
 standardize common code segments used when coding in C.
 
