@@ -15,4 +15,4 @@ This library includes basic functions related to the following sub-domains of C 
 For the complete list of included functions, refer to the libft.h file in the "includes" folder.
 The library can be compiled into a libft.a file using the Makefile, located in the root folder.
 
-Last updated: 20-05-2019 / Jesse Dunnink
+Last updated: 20-05-2019 / [Jesse Dunnink](https://www.linkedin.com/in/jesse-dunnink/)
