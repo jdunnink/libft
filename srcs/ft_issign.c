@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_ctostr.c                                        :+:    :+:            */
+/*   ft_issign.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/20 16:59:24 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/05/20 17:00:05 by jdunnink      ########   odam.nl         */
+/*   Created: 2019/06/07 09:44:45 by jdunnink      #+#    #+#                 */
+/*   Updated: 2019/06/07 09:46:48 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
-**	ctostr (char to string) takes a single character,
-**	and returns this character as null-terminated string.
+**	checks whether the unsigned char is a sign ( '-' or '+') or not.
 */
 
-char	*ft_ctostr(char c)
+int	ft_issign(int c)
 {
-	char *dest;
-
-	if (c == '\0')
-	{
-		dest = (char *)malloc(sizeof(char) * 1);
-		dest[0] = '\0';
-		return (dest);
-	}
-	dest = (char *)malloc(sizeof(char) * 2);
-	if (!dest)
-		return (0);
-	dest[0] = c;
-	dest[1] = '\0';
-	return (dest);
+	c = (unsigned char)c;
+	if (c == '-' || c == '+')
+		return (1);
+	return (0);
 }

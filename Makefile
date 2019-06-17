@@ -78,6 +78,17 @@ SRC =	ft_swap.c			\
 		get_next_line.c		\
 		ft_lstpushback.c	\
 		ft_ctostr.c			\
+		ft_cinstr.c			\
+		ft_count_digits.c	\
+		ft_count_cinstr.c	\
+		ft_issign.c			\
+		ft_labs.c			\
+		ft_llabs.c			\
+		ft_str_only.c		\
+		ft_str_tail.c		\
+		ft_strjoin_free.c	\
+		ft_stradd.c			\
+		ft_strdup_until.c	\
 
 OBJ = $(SRC:.c=.o)
 

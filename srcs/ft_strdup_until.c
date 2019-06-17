@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strndup.c                                       :+:    :+:            */
+/*   ft_strdup_until.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/28 18:00:37 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/05/28 18:01:41 by jdunnink      ########   odam.nl         */
+/*   Created: 2019/05/28 17:59:35 by jdunnink      #+#    #+#                 */
+/*   Updated: 2019/05/28 17:59:49 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,29 @@
 
 /*
 **	ft_strndup takes a string and returns an allocated duplicate that
-**	only includes up to n bytes.
+**	only includes bytes up until the first occurence of char end in the
+**	string s1.
 */
 
-char	*ft_strndup(char *src, size_t n)
+char	*ft_strdup_until(const char *s1, char end)
 {
-	size_t	len;
-	size_t	dest_len;
 	char	*dest;
-	size_t	i;
+	int		i;
+	int		len;
 
-	len = ft_strlen(src);
-	if (len == 0)
-		return (0);
-	dest_len = n;
-	dest = ft_strnew(dest_len);
-	if (!dest)
-		return (0);
-	i = 0;
-	while (i < n && i < len)
+	len = 0;
+	while (s1[len] != '\0' && s1[len] != end)
+		len++;
+	dest = ft_strnew(len);
+	if (dest)
 	{
-		dest[i] = src[i];
-		i++;
+		i = 0;
+		while (s1[i] != '\0' && s1[i] != end)
+		{
+			dest[i] = s1[i];
+			i++;
+		}
+		return (dest);
 	}
-	return (dest);
+	return (0);
 }

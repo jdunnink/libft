@@ -18,14 +18,6 @@
 **	as argument. Bases supporeted range between 2 and 16.
 */
 
-static	long	int	ft_labs(long int nb)
-{
-	if (nb < 0)
-		return (nb * -1);
-	else
-		return (nb);
-}
-
 static	long	int	ft_find_size(long int value, int base)
 {
 	int i;

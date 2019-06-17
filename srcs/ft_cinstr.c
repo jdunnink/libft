@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strndup.c                                       :+:    :+:            */
+/*   ft_cinstr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jdunnink <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/28 18:00:37 by jdunnink      #+#    #+#                 */
-/*   Updated: 2019/05/28 18:01:41 by jdunnink      ########   odam.nl         */
+/*   Created: 2019/05/28 17:43:55 by jdunnink      #+#    #+#                 */
+/*   Updated: 2019/05/28 17:44:36 by jdunnink      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	ft_strndup takes a string and returns an allocated duplicate that
-**	only includes up to n bytes.
+**	ft_cinstr checks whether the char c is present
+**	in the string passed as argument.
 */
 
-char	*ft_strndup(char *src, size_t n)
+int	ft_cinstr(const char *str, char c)
 {
-	size_t	len;
-	size_t	dest_len;
-	char	*dest;
 	size_t	i;
 
-	len = ft_strlen(src);
-	if (len == 0)
-		return (0);
-	dest_len = n;
-	dest = ft_strnew(dest_len);
-	if (!dest)
+	if (!str)
 		return (0);
 	i = 0;
-	while (i < n && i < len)
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (str[i] == c)
+			return (1);
 		i++;
 	}
-	return (dest);
+	return (0);
 }
